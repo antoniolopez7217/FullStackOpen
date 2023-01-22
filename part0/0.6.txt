@@ -1,0 +1,16 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+The Content-Type header of the request 
+(application/json) tells the server that 
+the included data is represented in 
+JSON format.
+end note
+
+server-->browser: The browser shows the new note (Status code 201 created)
+
+note over browser:
+Browser stays in the same page
+and shows the new note at the end
+of the list.
+end note

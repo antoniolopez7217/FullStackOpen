@@ -16,5 +16,6 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 - [React](https://reactjs.org/docs/getting-started.html)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Overview)
 - [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antoniolopezchamorro)

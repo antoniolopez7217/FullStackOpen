@@ -1,4 +1,4 @@
-# [FullStackOpen](https://fullstackopen.com/)
+# ![image](https://user-images.githubusercontent.com/117537010/214686194-e817d4d8-efc9-4679-8db9-56795ed2081c.png) [FullStackOpen](https://fullstackopen.com/)
 This course is an introduction to modern web development with JavaScript. The main focus is on single page applications implemented with React and supporting them with RESTful and GraphQL web services implemented with Node.js. The course also has parts on TypeScript, React Native, and Continuous Integration.
 
 Other topics include application debugging, configuration, runtime environment administration, and NoSQL databases.

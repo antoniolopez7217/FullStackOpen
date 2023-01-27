@@ -14,6 +14,7 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 
 ### Part 1
 - [React](https://reactjs.org/docs/getting-started.html)
+- [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Overview)
 - [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS)
 - [Eloquent JavaScript](https://eloquentjavascript.net/)

@@ -1,8 +1,22 @@
 import { useState } from 'react'
 
+const Header = (props) => <h1>{props.text}</h1> 
+
+const AnecdoteVotes = (props) => (
+  <>
+    <p>{props.anecdote}</p>
+    <p>has {props.votes} votes</p>
+  </>
+)
+
+const Button = (props) => <button onClick={props.handleClick}>{props.text}</button>
+
 const getRandomInt = (max) => Math.floor(Math.random() * max);
 
-const Button = (props)  => <button onClick={props.handleClick}>{props.text}</button>
+const LargestIndex = (points) => {
+  const index = points.findIndex((v) => v === Math.max(...points))
+  return (index)
+  }
 
 const App = () => {
   const anecdotes = [
@@ -24,13 +38,16 @@ const App = () => {
     copy[selected] += 1
     setPoints(copy)
   }
-  
+
+  console.log(points)
   return (
     <div>
-      <p>{anecdotes[selected]}</p>
-      <p>has {points[selected]} votes</p>
+      <Header text={"Anecdote of the day"}/>
+      <AnecdoteVotes anecdote={anecdotes[selected]} votes={points[selected]}/>
       <Button handleClick={() => Vote(points, selected)} text="vote"/>
       <Button handleClick={() => setSelected(getRandomInt(8))} text="next anecdote"/>
+      <Header text={"Anecdote with more votes"}/>
+      <AnecdoteVotes anecdote={anecdotes[LargestIndex(points)]} votes={Math.max(...points)}/>
     </div>
   )
 }

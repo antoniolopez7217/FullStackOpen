@@ -16,7 +16,7 @@ const getRandomInt = (max) => Math.floor(Math.random() * max);
 const LargestIndex = (points) => {
   const index = points.findIndex((v) => v === Math.max(...points))
   return (index)
-  }
+  } 
 
 const App = () => {
   const anecdotes = [

@@ -19,4 +19,7 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 - [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS)
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
 
+### Part 2
+- [Functional programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antoniolopezchamorro)

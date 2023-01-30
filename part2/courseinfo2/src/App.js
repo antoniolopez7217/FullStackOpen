@@ -1,3 +1,24 @@
+
+const Course = ({course})=> {
+
+const Header = ({name}) => <h1>{name}</h1>
+
+const Content = ({parts}) => parts.map((part) => <Part key={part.id} part={part}/>)
+
+const Part = ({part}) => <p>{part.name} {part.exercises}</p>
+
+//const Total = ({ sum }) => <p>Number of exercises {sum}</p>
+
+return (
+  <div>
+    <Header name={course.name} />
+    <Content parts={course.parts} />
+    {/* <Total sum={parts[0].exercises + parts[1].exercises + parts[2].exercises} /> */}
+  </div>
+)
+
+}
+
 const App = () => {
   const course = {
     id: 1,

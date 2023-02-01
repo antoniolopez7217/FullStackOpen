@@ -22,4 +22,6 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 ### Part 2
 - [Functional programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 
+- [Web forms - Working with user data](https://developer.mozilla.org/en-US/docs/Learn/Forms)
+
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antoniolopezchamorro)

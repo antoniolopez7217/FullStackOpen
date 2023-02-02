@@ -4,6 +4,19 @@ This course is an introduction to modern web development with JavaScript. The ma
 Other topics include application debugging, configuration, runtime environment administration, and NoSQL databases.
 
 Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to go fast, is to go well"
+## :mortar_board: Exercises
+### [Part 0 - Fundamentals of Web apps](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part0)
+
+
+### [Part 1 - Introduction to React](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part1)
+- [Courseinfo](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part1/courseinfo)
+
+- [Unicafe](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part1/unicafe)
+
+- [Anecdotes](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part1/anecdotes)
+
+### [Part 2 - Communicating with server](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part2)
+
 
 ## :bulb: Useful Links
 
@@ -21,7 +34,6 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 
 ### Part 2
 - [Functional programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
-
 - [Web forms - Working with user data](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antoniolopezchamorro)

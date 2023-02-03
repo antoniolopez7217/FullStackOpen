@@ -1,10 +1,33 @@
 import { useState } from 'react'
 
+const Filter = ({newFilter, handleFilterChange}) => (
+  <div>
+    filter shown with <input value={newFilter} onChange={handleFilterChange}/>
+  </div>
+  )
+
+const PersonForm = (props) => (
+  <form onSubmit={props.addPerson}>
+    <div>
+      name: <input value={props.newName} onChange={props.handleNameChange}/>
+    </div>
+    <div>
+      number: <input value={props.newNumber} onChange={props.handleNumberChange}/></div>
+    <div>
+      <button type="submit">add</button>
+    </div>
+  </form>
+)
+
+
 
 const Persons = ({persons, newFilter}) => {
   const filterPersons = persons.filter((person) => person.name.toLowerCase().includes(newFilter.toLowerCase()))
   return (
-    filterPersons.map((filterPerson) => <p key={filterPerson.id}>{filterPerson.name} {filterPerson.number}</p>)
+    filterPersons.map((filterPerson) => 
+    <p key={filterPerson.id}>
+      {filterPerson.name} {filterPerson.number}
+    </p>)
     )
 }
 
@@ -23,7 +46,9 @@ const App = () => {
     event.preventDefault()
     const nameObject = {
       name: newName,
-      number: newNumber}
+      number: newNumber,
+      id: persons.length + 1
+    }
 
     if (persons.find(({name}) => name === newName)) {
       window.alert(`${newName} is already added to phonebook`)
@@ -43,22 +68,19 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
-      <div>
-          filter shown with <input value={newFilter} onChange={handleFilterChange}/>
-        </div>
+
+      <Filter newFilter={newFilter} handleFilterChange={handleFilterChange}/>      
+
       <h2>add a new</h2>
-      <form onSubmit={addPerson}>
-        <div>
-          name: <input value={newName} onChange={handleNameChange}/>
-        </div>
-        <div>
-          number: <input value={newNumber} onChange={handleNumberChange}/></div>
-        <div>
-          <button type="submit">add</button>
-        </div>
-      </form>
+
+      <PersonForm addPerson={addPerson} 
+      newName={newName} handleNameChange={handleNameChange}
+      newNumber={newNumber} handleNumberChange={handleNumberChange}
+      />
+
       <h2>Numbers</h2>
-        <Persons persons={persons} newFilter={newFilter}/>
+
+      <Persons persons={persons} newFilter={newFilter}/>
     </div>
   )
 }

@@ -37,5 +37,8 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 - [Web forms - Working with user data](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 - [Why It's So Hard to Check Object Equality in JavaScript](https://www.joshbritz.co/posts/why-its-so-hard-to-check-object-equality/)
 - [Json Server](https://github.com/typicode/json-server)
+- [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ&ab_channel=JSConf)
+- [Multithreading Javascript - Web Workers](https://medium.com/techtrument/multithreading-javascript-46156179cf9a)
+
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antoniolopezchamorro)

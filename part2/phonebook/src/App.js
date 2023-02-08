@@ -54,8 +54,7 @@ const App = () => {
         const person = persons.find(x => x.name === newName)
         const changedPerson = {...person, number: newNumber}
         const id = person.id
-        
-        console.log(id)
+
         personService
           .update({id, changedPerson})
           .then(() => {

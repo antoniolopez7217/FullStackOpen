@@ -27,11 +27,33 @@ const Person = ({person, deletePerson}) => (
     </p>
 )
 
+const Notification = ({message}) => {
+  if (message === null){
+    return null
+  }
+  const notifStyle = {
+  color: 'green',
+	background: 'lightgrey',
+	fontSize: 20,
+	borderStyle: 'solid',
+	borderRadius: 5,
+	padding: 10,
+	marginBottom: 10,
+  }
+
+  return (
+    <div style={notifStyle}>
+      {message}
+    </div>
+  )
+}
+
 const App = () => {
   const [persons, setPersons] = useState([])
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
   const [newFilter, SetNewFilter] = useState('')
+  const [message, setMessage] = useState(null)
 
   useEffect(() => {
     personService
@@ -58,13 +80,29 @@ const App = () => {
         personService
           .update({id, changedPerson})
           .then(() => {
-            setPersons(persons.map(x => x.name !== newName ? x : changedPerson))})
+            setPersons(persons.map(x => x.name !== newName ? x : changedPerson))
+            setMessage(
+              `Updated ${changedPerson.name}`
+            )
+            setTimeout(() => {
+              setMessage(null)
+            }, 2000)
+          })
       }
     }
     else{
       personService
         .create(nameObject)
-        .then(returnedPerson => setPersons(persons.concat(returnedPerson)))
+        .then(returnedPerson => {
+          setPersons(persons.concat(returnedPerson))
+          setMessage(
+            `Added ${nameObject.name}`
+          )
+          setTimeout(() => {
+            setMessage(null)
+          }, 2000)
+        })
+
     }
 
     setNewName('')
@@ -89,7 +127,7 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
-
+      <Notification message={message} />
       <Filter newFilter={newFilter} handleFilterChange={handleFilterChange}/>      
 
       <h2>add a new</h2>

@@ -75,7 +75,7 @@ const App = () => {
       replace the old number with a new one?`)){
         const person = persons.find(x => x.name === newName)
         const changedPerson = {...person, number: newNumber}
-        const id = person.id
+        let id = person.id
 
         personService
           .update({id, changedPerson})

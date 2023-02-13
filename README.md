@@ -16,7 +16,9 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 - [Anecdotes](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part1/anecdotes)
 
 ### [Part 2 - Communicating with server](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part2)
+- [Courseinfo2](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part2/courseinfo2)
 
+- [Phonebook](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part2/phonebook)
 
 ## :bulb: Useful Links
 

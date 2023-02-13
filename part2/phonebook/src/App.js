@@ -31,21 +31,31 @@ const Notification = ({message}) => {
   if (message === null){
     return null
   }
+
   const notifStyle = {
-  color: 'green',
-	background: 'lightgrey',
-	fontSize: 20,
-	borderStyle: 'solid',
-	borderRadius: 5,
-	padding: 10,
-	marginBottom: 10,
+    color: 'green',
+    background: 'lightgrey',
+    fontSize: 20,
+    borderStyle: 'solid',
+    borderRadius: 5,
+    padding: 10,
+    marginBottom: 10,
   }
 
+  if (message.includes("has already been removed from server")){
+    const newNotifStyle = {...notifStyle, color: 'red'}
+    return (
+      <div style={newNotifStyle}>
+      {message}
+    </div>
+    )
+  } else {
   return (
     <div style={notifStyle}>
       {message}
     </div>
   )
+  }
 }
 
 const App = () => {
@@ -83,6 +93,14 @@ const App = () => {
             setPersons(persons.map(x => x.name !== newName ? x : changedPerson))
             setMessage(
               `Updated ${changedPerson.name}`
+            )
+            setTimeout(() => {
+              setMessage(null)
+            }, 2000)
+          })
+          .catch(error => {
+            setMessage(
+              `Information of ${changedPerson.name} has already been removed from server`
             )
             setTimeout(() => {
               setMessage(null)

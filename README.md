@@ -44,5 +44,11 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 - [Axios library](https://github.com/axios/axios)
 - [Promises chaining](https://javascript.info/promise-chaining)
 
+### Part 3
+- [Express - Node.js](http://expressjs.com/)
+- [npm dependency model](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
+- [nodemon](https://github.com/remy/nodemon)
+- [Postman](https://www.postman.com/)
+- [REST client - VS code](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antoniolopezchamorro)

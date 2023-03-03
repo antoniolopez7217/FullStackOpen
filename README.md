@@ -50,5 +50,7 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 - [nodemon](https://github.com/remy/nodemon)
 - [Postman](https://www.postman.com/)
 - [REST client - VS code](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+- [cors - express.js](https://github.com/expressjs/cors)
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antoniolopezchamorro)

@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const Country = ({country}) => (<p key={country.name}>{country.name.common}</p>)
+const Country = ({country, setValue}) => (
+  <p key={country.name}>
+    {country.name.common}
+  <button onClick={() => setValue(country.name.common)}>show</button>
+  </p>)
 
 const CountryFullInfo = ({country}) => {
   const languages = Object.values(country.languages)
-  
+
     return(
       <div>
         <h1>{country.name.common}</h1>
@@ -21,13 +25,13 @@ const CountryFullInfo = ({country}) => {
 }
 
 
-const FilterCountries = ({countries}) =>{
+const FilterCountries = ({countries, setValue}) =>{
   if(countries.length>10){
     return(<p>Too many matches, specify another filter</p>)
   }else if(countries.length===1){
     return(countries.map(country => <CountryFullInfo country={country}/>))
   }else{
-    return(countries.map(country => <Country country={country}/>))}
+    return(countries.map(country => <Country country={country} setValue={setValue}/>))}
 }
 
 const App = () => {
@@ -50,9 +54,13 @@ const App = () => {
 
   return(
     <div>
-      find countries: <input value={value} onChange={handleChange}/>
+      find countries <input value={value} onChange={handleChange}/>
       
-      <FilterCountries countries={countries} value={value}/>
+      <FilterCountries 
+        countries={countries} 
+        value={value}
+        setValue={setValue}  
+      />
     </div>
   )
 }

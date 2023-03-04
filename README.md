@@ -20,6 +20,11 @@ Famous software developer Robert "Uncle Bob" Martin has stated: "The only way to
 
 - [Phonebook](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part2/phonebook)
 
+- [Countries](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part2/countries)
+
+### [Part 3 - Programming a server with NodeJS and Express](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part3)
+- [Phonebook backend](https://github.com/antoniolopez7217/FullStackOpen/tree/main/part3/phonebook_backend)
+
 ## :bulb: Useful Links
 
 ### Part 0
